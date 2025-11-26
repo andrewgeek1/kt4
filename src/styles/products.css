@@ -1,0 +1,91 @@
+/* Контейнер всей страницы */
+.products-container {
+  padding: 20px 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовок страницы */
+.products-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Сетка карточек */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Карточка */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  height: 360px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Картинка */
+.product-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+/* Заголовок товара */
+.product-title {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  display: flexbox;
+  height: 48px;
+  overflow: visible;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* Центровка звезд */
+.product-card .stars {
+  margin-top: auto;
+}
+
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Чтобы Link вел себя как блок */
+.product-card-link {
+  display: block;
+}
+
+/* Чтобы наводилось красиво */
+.product-card:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.h1 {
+  margin-top: 0;
+}
